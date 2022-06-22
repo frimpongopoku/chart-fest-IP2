@@ -11,7 +11,7 @@ const boxes = [
 ];
 function App() {
   return (
-    <div className="app-root">
+    <div className="app-root page-styles">
       <div className="app-content">
         {boxes.map((it, key) => {
           return (

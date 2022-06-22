@@ -11,10 +11,11 @@
   --app-theme-cyan: #26cbd6;
   --app-theme-pink: #f678a8;
   --app-theme-orange-light: #fcc7a5;
+  --app-theme-background-hard: #2f1a27;
+
 }
 
 .app-root {
-  background: var(--app-theme-background);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -22,6 +23,11 @@
   justify-content: center;
 }
 
+.page-styles {
+  background: var(--app-theme-background);
+  height: 100vh;
+  width: 100%;
+}
 .app-content {
   width: 45vw;
   height: 35vw;
