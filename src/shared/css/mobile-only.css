@@ -1,3 +1,5 @@
 @media only screen and (max-width: 767px) {
-  
+  .box p {
+    font-size: 15px;
+  }
 }

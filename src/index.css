@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(shared/css/elevations.css);
+@import url(shared/css/mobile-only.css);
+@import url(shared/css/pc-only.css);
+@import url(shared/css/universal.css);
+
+:root {
+  --app-sidebar-background: #361e2d;
+  --app-theme-background: #402234;
+  --app-theme-light: #846881;
+  --app-theme-orange: #f79b5e;
+  --app-theme-cyan: #26cbd6;
+  --app-theme-pink: #f678a8;
+  --app-theme-orange-light: #fcc7a5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-root {
+  background: var(--app-theme-background);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-content {
+  width: 45vw;
+  height: 35vw;
+  max-width: 45vw;
+  max-height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40%;
+  height: 40%;
+  margin: 6px;
+  background: var(--back-color);
+  cursor: pointer;
+}
+.box:hover {
+  transform: scale(0.98);
+  transition: 0.2s ease-out;
+}
+.box p {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.touchable-opacity:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-out;
 }

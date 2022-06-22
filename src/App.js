@@ -1,46 +1,39 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./index.css";
 import { bindActionCreators } from "redux";
-import { testReduxAction } from "./redux/actions/actions";
+
 import { connect } from "react-redux";
-import { useEffect } from "react";
 
-function App({ testAction, testStore }) {
-  useEffect(() => {
-    testAction(
-      "Welcome to your new app, redux, redux-thunk, and redux-logger are already setup. Enjoy!"
-    );
-  }, []);
-
-  console.log("This is from the store and I am loggin it out innit", testStore);
-
+const boxes = [
+  { name: "Overview", color: "var(--app-theme-orange)" },
+  { name: "Bubble Chart", color: "var(--app-theme-cyan)" },
+  { name: "Trend Line", color: "var(--app-theme-light)" },
+  { name: "Candle Sticks", color: "var(--app-theme-pink)" },
+];
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <div className="app-content">
+        {boxes.map((it, key) => {
+          return (
+            <div
+              key={key}
+              className="box touchable-opacity"
+              style={{ "--back-color": it.color }}
+            >
+              <p>{it.name}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 const mapStateToProps = (state) => {
-  return {
-    testStore: state.testStore,
-  };
+  return { ...state };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ testAction: testReduxAction }, dispatch);
+  return bindActionCreators({}, dispatch);
 };
 export default connect(mapStateToProps, mapDispatchToProps)(App);
