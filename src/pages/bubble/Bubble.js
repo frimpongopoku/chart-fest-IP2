@@ -68,6 +68,7 @@ function Bubble() {
           options={values.options}
           series={values.series}
           type="bubble"
+          height={400}
         />
       </div>
     </div>
