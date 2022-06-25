@@ -1,22 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { items } from "../../pages/constants";
 import "./sidebar.css";
 
-const items = [
-  { name: "Home", icon: "fa fa-home" },
-  { name: "Overview", icon: "fa fa-dashboard" },
-  { name: "Bubble", icon: "fa fa-circle" },
-  { name: "Trend", icon: "fa fa-line-chart" },
-  { name: "Candles", icon: "fa fa-btc" },
-  { name: "Authors", icon: "fa fa-users" },
-];
-function Sidebar() {
+function Sidebar({ active }) {
+  const navigateTo = useNavigate();
   return (
     <div className="sidebar-root elevate-2">
-      {items.map(({ name, icon }, index) => {
+      {items.map(({ name, icon, key, color, url }, index) => {
+        const isActive = active === key;
         return (
           <div
+            onClick={() => navigateTo(url || "#")}
             key={index.toString()}
-            className="sidebar-small-box touchable-opacity"
+            className={`sidebar-small-box touchable-opacity ${
+              isActive ? "item-active" : ""
+            }`}
+            style={{ background: isActive ? color : "transparent" }}
           >
             <i className={icon} />
             <small>{name}</small>
@@ -26,5 +26,4 @@ function Sidebar() {
     </div>
   );
 }
-
 export default Sidebar;

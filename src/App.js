@@ -2,20 +2,25 @@ import "./index.css";
 import { bindActionCreators } from "redux";
 
 import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { items } from "./pages/constants";
 
 const boxes = [
-  { name: "Overview", color: "var(--app-theme-orange)" },
-  { name: "Bubble Chart", color: "var(--app-theme-cyan)" },
-  { name: "Trend Line", color: "var(--app-theme-light)" },
-  { name: "Candle Sticks", color: "var(--app-theme-pink)" },
+  { name: "Overview", color: "var(--app-theme-orange)", key: "overview" },
+  { name: "Bubble Chart", color: "var(--app-theme-cyan)", key: "bubble" },
+  { name: "Trend Line", color: "var(--app-theme-light)", key: "trends" },
+  { name: "Candle Sticks", color: "var(--app-theme-pink)", key: "candles" },
 ];
 function App() {
+  const navigateTo = useNavigate();
   return (
     <div className="app-root page-styles">
       <div className="app-content">
         {boxes.map((it, key) => {
+          const pageObj = items.find((item) => item.key === it.key);
           return (
             <div
+              onClick={() => navigateTo(pageObj?.url)}
               key={key}
               className="box touchable-opacity"
               style={{ "--back-color": it.color }}

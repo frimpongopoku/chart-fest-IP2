@@ -12,7 +12,6 @@
   --app-theme-pink: #f678a8;
   --app-theme-orange-light: #fcc7a5;
   --app-theme-background-hard: #2f1a27;
-
 }
 
 .app-root {
@@ -62,4 +61,23 @@
 .touchable-opacity:hover {
   opacity: 0.7;
   transition: 0.2s ease-out;
+}
+
+.page-wrapper-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-wrapper-container .sidebar-root {
+  flex-basis: 100px;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.page-title {
+  color: var(--color);
+  margin-bottom: 20px;
+  text-transform: capitalize;
 }
