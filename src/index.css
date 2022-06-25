@@ -81,3 +81,9 @@
   margin-bottom: 20px;
   text-transform: capitalize;
 }
+
+.graph-area {
+  /* height: 50vh; */
+  max-height: 200px;
+  height:200px
+}
