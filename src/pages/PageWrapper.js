@@ -28,7 +28,7 @@ function PageWrapper() {
           style={{ color: pageObj?.color || "var(--app-theme-orange)" }}
           className="page-title"
         >
-          {pagename || "..."}
+          {pageObj.nickname || pagename || "..."}
         </h1>
         {pageComponent || <h1>Sorry, this page could not be found</h1>}
       </div>

@@ -1,11 +1,16 @@
 @media only screen and (min-width: 768px) {
   .box p {
     font-size: 19px;
-  
   }
 
   .page-content {
     padding: 30px 60px;
     font-size: 28px;
+  }
+  .graph-area {
+    padding: 25px;
+  }
+  .motor-guys {
+    width: 440px;
   }
 }

@@ -8,6 +8,7 @@ export const items = [
   },
   {
     name: "Overview",
+    nickname: "Application Overview",
     icon: "fa fa-dashboard",
     key: "overview",
     color: "var(--app-theme-orange)",
