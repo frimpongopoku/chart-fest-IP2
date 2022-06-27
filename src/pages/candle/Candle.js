@@ -1,5 +1,6 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import { connect } from "react-redux";
 
 const values = {
   series: [
@@ -292,4 +293,7 @@ function Candle() {
   );
 }
 
-export default Candle;
+const mapStateToProps = ({ appleStock }) => {
+  return { appleStock };
+};
+export default connect(mapStateToProps)(Candle);
