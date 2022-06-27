@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactApexChart from "react-apexcharts";
 import { connect } from "react-redux";
+import { INITIAL_STATE } from "../../redux/reducers/reducers";
+import Loader from "../../widgets/loader/Loader";
 
 const values = {
   series: [
@@ -252,10 +254,9 @@ const values = {
   options: {
     chart: {
       type: "candlestick",
-      height: 350,
     },
     title: {
-      text: "CandleStick Chart",
+      text: "AAPL Stock Data",
       align: "left",
       style: { color: "white" },
     },
@@ -280,12 +281,14 @@ const values = {
   },
 };
 
-function Candle() {
+function Candle({ appleStock }) {
+  const itemsAreNowLoading = appleStock === INITIAL_STATE;
+  if (itemsAreNowLoading) return <Loader />;
   return (
     <div className="graph-area">
       <ReactApexChart
         options={values.options}
-        series={values.series}
+        series={appleStock}
         type="candlestick"
         height={400}
       />
@@ -293,7 +296,7 @@ function Candle() {
   );
 }
 
-const mapStateToProps = ({ appleStock }) => {
-  return { appleStock };
+const mapStateToProps = (state) => {
+  return { appleStock: state.appleStock };
 };
 export default connect(mapStateToProps)(Candle);

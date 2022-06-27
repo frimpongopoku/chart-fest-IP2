@@ -6,9 +6,9 @@ import App from "./App";
 import PageWrapper from "./pages/PageWrapper";
 import { fetchInitialContent } from "./redux/actions/actions";
 
-function Router() {
+function Router({ fetchContent }) {
   useEffect(() => {
-    fetchInitialContent();
+    fetchContent();
   });
   return (
     <BrowserRouter>
