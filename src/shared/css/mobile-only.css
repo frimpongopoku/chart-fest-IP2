@@ -6,4 +6,14 @@
     padding: 10px;
     font-size: x-large;
   }
+  .graph-area { 
+    padding:10px;
+  }
+  .motor-guys { 
+    width:250px;
+  }
+  .try-cool-feature { 
+    padding: 15px 25px;
+    font-size: medium;
+  }
 }

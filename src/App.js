@@ -4,6 +4,8 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { items } from "./pages/constants";
+import { fetchInitialContent } from "./redux/actions/actions";
+
 
 const boxes = [
   { name: "Overview", color: "var(--app-theme-orange)", key: "overview" },
@@ -13,6 +15,8 @@ const boxes = [
 ];
 function App() {
   const navigateTo = useNavigate();
+
+
   return (
     <div className="app-root page-styles">
       <div className="app-content">
@@ -39,6 +43,6 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators({ fetchContent: fetchInitialContent }, dispatch);
 };
 export default connect(mapStateToProps, mapDispatchToProps)(App);
