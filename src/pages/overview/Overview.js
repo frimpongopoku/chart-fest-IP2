@@ -3,19 +3,31 @@ import motorGuys from "./../../media/motor.png";
 function Overview() {
   const sources = [
     {
-      name: "First one",
+      name: "Design Inspiration (Dribble)",
       url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
     },
     {
-      name: "Second one",
+      name: "Apple Stocks API",
       url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
     },
     {
-      name: "Third one",
+      name: "African Countries API",
       url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
     },
     {
-      name: "Fourth one",
+      name: "Confetti Animation API ",
+      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+    },
+    {
+      name: "Redux",
+      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+    },
+    {
+      name: "React Router",
+      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+    },
+    {
+      name: "React Router",
       url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
     },
   ];
