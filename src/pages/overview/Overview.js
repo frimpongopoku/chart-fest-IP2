@@ -43,7 +43,7 @@ function Overview() {
       </p>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div>
-          <h4 className="page-subtitle">Sources</h4>
+          <h4 className="page-subtitle">Resources</h4>
           <ol style={{ listStyleType: "none" }}>
             {sources.map((it, index) => {
               return (

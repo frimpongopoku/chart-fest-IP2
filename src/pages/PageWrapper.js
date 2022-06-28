@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Confetti from "react-confetti";
 import { useParams } from "react-router-dom";
 import Sidebar from "../widgets/sidebar/Sidebar";
 import Authors from "./authors/Authors";
@@ -10,6 +11,8 @@ import Trends from "./trend/Trends";
 
 function PageWrapper() {
   const { pagename } = useParams();
+
+  const [showConfetti, setShowConfetti] = useState(false);
   const pages = {
     overview: <Overview />,
     bubble: <Bubble />,
@@ -21,18 +24,33 @@ function PageWrapper() {
   const pageObj = items.find((it) => it.key === pagename);
 
   return (
-    <div className="page-styles page-wrapper-container">
-      <Sidebar active={pagename} />
-      <div className="page-content">
-        <h1
-          style={{ color: pageObj?.color || "var(--app-theme-orange)" }}
-          className="page-title"
+    <>
+      {showConfetti && (
+        <Confetti
+          width={window.screen.width}
+          height={window.screen.height}
+          numberOfPieces={350}
+        />
+      )}
+      <div className="page-styles page-wrapper-container">
+        <button
+          className="try-cool-feature touchable-opacity"
+          onClick={() => setShowConfetti(!showConfetti)}
         >
-          {pageObj.nickname || pagename || "..."}
-        </h1>
-        {pageComponent || <h1>Sorry, this page could not be found</h1>}
+          {showConfetti ? "Stop Animation" : "Try Our Cool Feature"}
+        </button>
+        <Sidebar active={pagename} />
+        <div className="page-content">
+          <h1
+            style={{ color: pageObj?.color || "var(--app-theme-orange)" }}
+            className="page-title"
+          >
+            {pageObj.nickname || pagename || "..."}
+          </h1>
+          {pageComponent || <h1>Sorry, this page could not be found</h1>}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -14,6 +14,23 @@
   --app-theme-background-hard: #2f1a27;
 }
 
+.try-cool-feature {
+  position: fixed;
+  right: 0px;
+  top: 30px;
+
+  font-weight: bold;
+  border-top-left-radius: 55px;
+  border-bottom-left-radius: 55px;
+  background-color: var(--app-theme-cyan);
+  box-shadow: var(--elevate-2);
+  z-index: 20;
+  cursor: pointer;
+  border-width: 0px;
+  color: white;
+
+  text-transform: uppercase;
+}
 .app-root {
   height: 100vh;
   width: 100%;
