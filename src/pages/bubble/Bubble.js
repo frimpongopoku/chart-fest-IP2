@@ -1,5 +1,8 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import { connect } from "react-redux";
+import { INITIAL_STATE } from "../../redux/reducers/reducers";
+import Loader from "../../widgets/loader/Loader";
 
 const values = {
   series: [
@@ -32,12 +35,16 @@ const values = {
       opacity: 0.8,
     },
     title: {
-      text: "Our Bubble Chart",
+      text: "A Graph Comparing African Countries in Terms of Population, Gini & Area",
       style: { color: "white" },
     },
     xaxis: {
       tickAmount: 12,
       type: "category",
+      title: {
+        text: "Area Of Country In Square Meters",
+        style: { color: "white" },
+      },
       labels: {
         style: {
           colors: "white",
@@ -45,7 +52,7 @@ const values = {
       },
     },
     yaxis: {
-      max: 70,
+      title: { text: "Population Of Country", style: { color: "white" } },
       labels: {
         style: {
           colors: "white",
@@ -54,19 +61,22 @@ const values = {
     },
 
     legend: {
+      show: false,
       labels: {
         useSeriesColors: true,
       },
     },
   },
 };
-function Bubble() {
+function Bubble({ countries }) {
+  if (countries === INITIAL_STATE)
+    return <Loader text="Fetching country info..." />;
   return (
     <div>
       <div className="graph-area">
         <ReactApexChart
           options={values.options}
-          series={values.series}
+          series={countries}
           type="bubble"
           height={400}
         />
@@ -75,4 +85,8 @@ function Bubble() {
   );
 }
 
-export default Bubble;
+const mapStateToProps = (state) => {
+  return { countries: state.countries };
+};
+
+export default connect(mapStateToProps)(Bubble);

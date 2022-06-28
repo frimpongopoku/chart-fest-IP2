@@ -7,7 +7,7 @@ function Loader({ text = "Loading..." }) {
         className="fa fa-spinner fa-spin"
         style={{ fontSize: "40px", color: "white", marginBottom: 6 }}
       />
-      <br />
+      <br /> 
       <small>{text}</small>
     </center>
   );

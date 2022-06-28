@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { connect } from "react-redux";
 import { INITIAL_STATE } from "../../redux/reducers/reducers";
