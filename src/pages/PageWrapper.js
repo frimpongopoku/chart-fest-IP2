@@ -34,7 +34,7 @@ function PageWrapper() {
       )}
       <div className="page-styles page-wrapper-container">
         <button
-          className="try-cool-feature touchable-opacity"
+          className="try-cool-feature"
           onClick={() => setShowConfetti(!showConfetti)}
         >
           {showConfetti ? "Stop Animation" : "Try Our Cool Feature"}

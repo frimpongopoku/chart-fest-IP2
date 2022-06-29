@@ -1,9 +1,8 @@
 .sidebar-root {
   background: var(--app-theme-background-hard);
-  width: 100px;
-  height: 100vh;
+
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
 }
@@ -14,8 +13,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: 15px;
-  margin: 5px;
 }
 
 .item-active {
@@ -43,17 +40,37 @@ small {
 
 /*  PC EXCLUSIVE */
 @media only screen and (min-width: 768px) {
+  .sidebar-root {
+    width: 100px;
+    height: 100vh;
+    flex-direction: column;
+  }
   .sidebar-small-box small {
     font-size: 12px;
   }
   .sidebar-small-box i {
     font-size: 32px;
   }
+  .sidebar-small-box {
+    padding: 15px;
+    margin: 5px;
+  }
 }
 
 /*  MOBILE MODE */
 @media only screen and (max-width: 767px) {
+  .sidebar-root {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+  .sidebar-small-box {
+    padding: 10px;
+    margin: 5px;
+  }
   .sidebar-small-box small {
-    font-size: 13px;
+    font-size: 9px;
+    font-weight: bold;
   }
 }

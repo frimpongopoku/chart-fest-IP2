@@ -18,7 +18,7 @@
   position: fixed;
   right: 0px;
   top: 30px;
-
+  opacity: 0.5;
   font-weight: bold;
   border-top-left-radius: 55px;
   border-bottom-left-radius: 55px;
@@ -30,6 +30,10 @@
   color: white;
 
   text-transform: uppercase;
+}
+.try-cool-feature:hover {
+  opacity: 1;
+  transition: 0.2s ease-out;
 }
 .app-root {
   height: 100vh;
@@ -92,43 +96,35 @@
 .page-content {
   width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 200px;
 }
 
 .page-title {
   color: var(--color);
-  margin-bottom: 20px;
+
   text-transform: capitalize;
 }
 
 .app-link {
-  font-size: 21px;
   color: var(--app-theme-orange);
 }
 .graph-area {
-  /* height: 50vh; */
-  /* max-height: 200px; */
-  /* height: 200px; */
-  box-shadow: var(--elevate-2);
-  background: var(--app-theme-background-hard);
+
+
 
   border-radius: 5px;
   margin-bottom: 15px;
-  /* height: 430px; */
 }
 
 .text {
   color: #ede1e1;
-  font-size: 25px;
-  line-height: 1.7;
+
   text-align: justify;
 }
 
-.content-wrapper {
-  padding: 20px;
-}
 .page-subtitle {
   color: #cec3d0;
-  margin: 15px 0px;
 }
 
 .author-item {

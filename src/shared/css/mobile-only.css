@@ -1,4 +1,7 @@
 @media only screen and (max-width: 767px) {
+  .phone-vanish {
+    display: none;
+  }
   .box p {
     font-size: 15px;
   }
@@ -6,14 +9,38 @@
     padding: 10px;
     font-size: x-large;
   }
-  .graph-area { 
-    padding:10px;
+  .graph-area {
+    padding: 10px;
   }
-  .motor-guys { 
-    width:250px;
+  .motor-guys {
+    width: 250px;
   }
-  .try-cool-feature { 
-    padding: 15px 25px;
-    font-size: medium;
+  .try-cool-feature {
+    padding: 12px 19px;
+    font-size: 13px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .page-title {
+    font-size: 25px;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  .content-wrapper {
+    padding: 10px;
+  }
+  .app-link {
+    font-size: 16px;
+  }
+  .page-subtitle {
+    padding: 8px 0px;
+    font-size: 20px;
+  }
+  .graph-area {
+    box-shadow: 0 0 0;
+    background: transparent;
   }
 }

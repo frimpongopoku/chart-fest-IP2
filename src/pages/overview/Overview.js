@@ -77,11 +77,11 @@ function Overview() {
             href="https://docs.google.com/document/d/1lwJ4viuYr3MlDZvsUTdj6G_k-TtPi7M0Tjiyu4kZR3s/edit"
             target="_blank"
           >
-            https://docs.google.com/document/d/1lwJ4viuYr3MlDZvsUTdj6G_k-TtPi7M0Tjiyu4kZR3s/edit
+            Assignment Source
           </a>
         </div>
         <div style={{ marginLeft: "auto" }}>
-          <img className="motor-guys" src={motorGuys} />
+          <img className="motor-guys phone-vanish" src={motorGuys} />
         </div>
       </div>
     </div>

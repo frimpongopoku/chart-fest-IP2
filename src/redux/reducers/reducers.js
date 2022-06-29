@@ -1,4 +1,5 @@
 import {
+  SET_BITCOIN_ITEMS,
   SET_COUNTRIES_CONTENT,
   SET_STOCK_CONTENT,
 } from "../actions/action-constants";
@@ -18,6 +19,12 @@ export const stockContentRducer = (state = INITIAL_STATE, action = {}) => {
 };
 export const countryContentReducer = (state = INITIAL_STATE, action = {}) => {
   if (action.type === SET_COUNTRIES_CONTENT) {
+    return action.payload;
+  }
+  return state;
+};
+export const bitcoinContentReducer = (state = INITIAL_STATE, action = {}) => {
+  if (action.type === SET_BITCOIN_ITEMS) {
     return action.payload;
   }
   return state;

@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import {
+  bitcoinContentReducer,
   countryContentReducer,
   doNothingReducer,
   stockContentRducer,
@@ -9,4 +10,5 @@ export default combineReducers({
   testStore: doNothingReducer,
   appleStock: stockContentRducer,
   countries: countryContentReducer,
+  bitcoins : bitcoinContentReducer
 });

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { items } from "../../pages/constants";
 import "./sidebar.css";
-
+ 
 function Sidebar({ active }) {
   const navigateTo = useNavigate();
   return (

@@ -254,6 +254,7 @@ const values = {
   options: {
     chart: {
       type: "candlestick",
+      zoom: { enabled: false },
     },
     title: {
       text: "AAPL Stock Data",
