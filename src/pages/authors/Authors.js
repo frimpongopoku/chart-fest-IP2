@@ -2,13 +2,13 @@ import React from "react";
 
 const authors = [
   { name: "Frimpong Opoku Agyemang", img: "https://i.pravatar.cc/150?u=1" },
-  { name: "Jefferey Izuorah", img: "https://i.pravatar.cc/150?u=2" },
+  { name: "Jeffrey Izuorah", img: "https://i.pravatar.cc/150?u=2" },
   { name: "Alex Miseda", img: "https://i.pravatar.cc/150?u=3" },
   { name: "Stanley Olajide", img: "https://i.pravatar.cc/150?u=4" },
 ];
 function Authors() {
   return (
-    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+    <div className="authors-wrapper" >
       {authors.map((it, index) => {
         const isLastOfFirst = index === 0 || index === authors.length - 1;
         return (

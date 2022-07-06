@@ -3,9 +3,18 @@
     font-size: 19px;
   }
 
+  .app-content { 
+    width: 45vw;
+    height: 35vw;
+    max-width: 45vw;
+    max-height: 35vw;
+  }
   .page-content {
     padding: 30px 60px;
     font-size: 28px;
+  }
+  .authors-wrapper {
+    flex-direction: row;
   }
   .graph-area {
     padding: 25px;

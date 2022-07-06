@@ -37,7 +37,7 @@ function PageWrapper() {
           className="try-cool-feature"
           onClick={() => setShowConfetti(!showConfetti)}
         >
-          {showConfetti ? "Stop Animation" : "Try Our Cool Feature"}
+          {showConfetti ? "Ok, I have had enough" : "Try Our Cool Feature"}
         </button>
         <Sidebar active={pagename} />
         <div className="page-content">

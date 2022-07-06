@@ -49,10 +49,7 @@
   width: 100%;
 }
 .app-content {
-  width: 45vw;
-  height: 35vw;
-  max-width: 45vw;
-  max-height: 35vw;
+ 
   display: flex;
   justify-content: center;
   align-content: center;
@@ -105,7 +102,10 @@
 
   text-transform: capitalize;
 }
-
+.authors-wrapper { 
+  display: flex;
+  flex-wrap: wrap;
+}
 .app-link {
   color: var(--app-theme-orange);
 }

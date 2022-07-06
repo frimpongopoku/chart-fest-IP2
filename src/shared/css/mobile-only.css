@@ -43,4 +43,23 @@
     box-shadow: 0 0 0;
     background: transparent;
   }
+
+  .authors-wrapper {
+    flex-direction: column;
+  }
+  .author-item {
+    margin-bottom: 10px;
+  }
+  .app-content {
+    width: 100vw;
+    max-width: 100vw;
+    height: 36%;
+  }
+  .box {
+    height: 60%;
+    width: 32%;
+  }
+  .box p {
+    font-size: 13px;
+  }
 }
