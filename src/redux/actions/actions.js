@@ -18,7 +18,6 @@ export const fetchInitialContent = () => (dispatch) => {
     InternetExplorer.get({ url: BITCOIN_URL }),
   ])
     .then(([apples, africanCountries, bitcoins]) => {
-      console.log("I think I am the african bitcoins", bitcoins);
       dispatch(setStockContentAction(restructureStocks(apples)));
       dispatch(
         setCountryContentAction(restructureCountryContent(africanCountries))

@@ -6,16 +6,18 @@ import { useNavigate } from "react-router-dom";
 import { items } from "./pages/constants";
 import { fetchInitialContent } from "./redux/actions/actions";
 
-
 const boxes = [
   { name: "Overview", color: "var(--app-theme-orange)", key: "overview" },
-  { name: "Bubble Chart", color: "var(--app-theme-cyan)", key: "bubble" },
-  { name: "Trend Line", color: "var(--app-theme-light)", key: "trends" },
-  { name: "Candle Sticks", color: "var(--app-theme-pink)", key: "candles" },
+  {
+    name: "Countries & Population",
+    color: "var(--app-theme-cyan)",
+    key: "population",
+  },
+  { name: "Bitcoin Trend", color: "var(--app-theme-light)", key: "bitcoin" },
+  { name: "Apple Stock Prices", color: "var(--app-theme-pink)", key: "stocks" },
 ];
 function App() {
   const navigateTo = useNavigate();
-
 
   return (
     <div className="app-root page-styles">

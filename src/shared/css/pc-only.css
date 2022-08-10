@@ -3,7 +3,18 @@
     font-size: 19px;
   }
 
-  .app-content { 
+  .ol {
+    align-items: center;
+    justify-content: center;
+  }
+  .li {
+    align-items: center;
+  }
+  .li img {
+    height: 120px;
+    width: 120px;
+  }
+  .app-content {
     width: 45vw;
     height: 35vw;
     max-width: 45vw;

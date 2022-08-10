@@ -15,9 +15,9 @@ function PageWrapper() {
   const [showConfetti, setShowConfetti] = useState(false);
   const pages = {
     overview: <Overview />,
-    bubble: <Bubble />,
-    candles: <Candle />,
-    trends: <Trends />,
+    population: <Bubble />,
+    stocks: <Candle />,
+    bitcoin: <Trends />,
     authors: <Authors />,
   };
   const pageComponent = pages[pagename];

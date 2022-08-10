@@ -2,6 +2,18 @@
   .phone-vanish {
     display: none;
   }
+  .ol {
+    align-items: start;
+    justify-content: start;
+  }
+  .li img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .li a { 
+    font-size:13px;
+  }
   .box p {
     font-size: 15px;
   }

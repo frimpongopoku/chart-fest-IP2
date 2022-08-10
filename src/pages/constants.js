@@ -15,25 +15,27 @@ export const items = [
     url: "/pages/overview",
   },
   {
-    name: "Bubble",
+    name: "Population",
     icon: "fa fa-circle",
-    key: "bubble",
+    key: "population",
     color: "var(--app-theme-cyan)",
-    url: "/pages/bubble",
+    url: "/pages/population",
   },
   {
-    name: "Trend",
-    icon: "fa fa-line-chart",
-    key: "trends",
-    color: "var(--app-theme-light)",
-    url: "/pages/trends",
-  },
-  {
-    name: "Candles",
+    name: "Bitcoin",
+    nickname: "Bitcoin Trend",
     icon: "fa fa-btc",
-    key: "candles",
+    key: "bitcoin",
+    color: "var(--app-theme-light)",
+    url: "/pages/bitcoin",
+  },
+  {
+    name: "Stocks",
+    nickname: "Apple Stock",
+    icon: "fa fa-line-chart",
+    key: "stocks",
     color: "var(--app-theme-pink)",
-    url: "/pages/candles",
+    url: "/pages/stocks",
   },
   {
     name: "Authors",
@@ -49,4 +51,5 @@ export const STOCKS_URL =
 
 export const COUNTRY_URL = "https://restcountries.com/v3.1/region/africa";
 
-export const BITCOIN_URL = "https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/day/2019-01-01/2022-05-01?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW"
+export const BITCOIN_URL =
+  "https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/day/2019-01-01/2022-05-01?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW";
