@@ -2,7 +2,10 @@
   .box p {
     font-size: 19px;
   }
-
+.api-logos { 
+  height:200px; 
+  width:200px;
+}
   .ol {
     align-items: center;
     justify-content: center;

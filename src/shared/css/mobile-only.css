@@ -2,6 +2,10 @@
   .phone-vanish {
     display: none;
   }
+  .api-logos {
+    height: 110px;
+    width: 100px;
+  }
   .ol {
     align-items: start;
     justify-content: start;
@@ -11,8 +15,8 @@
     width: 80px;
   }
 
-  .li a { 
-    font-size:13px;
+  .li a {
+    font-size: 13px;
   }
   .box p {
     font-size: 15px;

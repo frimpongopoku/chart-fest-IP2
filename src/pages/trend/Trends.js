@@ -3,25 +3,27 @@ import ReactApexChart from "react-apexcharts";
 import { connect } from "react-redux";
 import { INITIAL_STATE } from "../../redux/reducers/reducers";
 import Loader from "../../widgets/loader/Loader";
+import polygonLogo from "./../../media/polygon_logo.png";
+
+const involved = [
+  {
+    name: "Actions.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/redux/actions/actions.js",
+  },
+  {
+    name: "PageWrapper.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/PageWrapper.js",
+  },
+  {
+    name: "Trends.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/trend/Trends.js",
+  },
+  {
+    name: "Loader.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/widgets/loader/Loader.js",
+  },
+];
 const values = {
-  series: [
-    {
-      name: "XYZ MOTORS",
-      data: [
-        { x: new Date("2020-01-1"), y: 10 },
-        { x: new Date("2020-01-2"), y: 20 },
-        { x: new Date("2020-01-3"), y: 30 },
-        { x: new Date("2020-01-4"), y: 5 },
-        { x: new Date("2020-01-5"), y: 7 },
-        { x: new Date("2020-01-6"), y: 20 },
-        { x: new Date("2020-01-7"), y: 75 },
-        { x: new Date("2020-01-8"), y: 60 },
-        { x: new Date("2020-01-9"), y: 55 },
-        { x: new Date("2020-01-10"), y: 60 },
-        { x: new Date("2020-01-11"), y: 40 },
-      ],
-    },
-  ],
   options: {
     colors: ["#f678a8"],
     chart: {
@@ -87,18 +89,82 @@ const values = {
   },
 };
 function Trends({ bitcoins }) {
-  console.log("le bitcoins", bitcoins);
   if (bitcoins === INITIAL_STATE)
     return <Loader text="Loading bitcoin data..." />;
   return (
-    <div className="graph-area">
-      <ReactApexChart
-        options={values.options}
-        series={bitcoins}
-        type="line"
-        height={400}
-      />
-    </div>
+    <>
+      <div className="graph-area">
+        <ReactApexChart
+          options={values.options}
+          series={bitcoins}
+          type="line"
+          height={400}
+        />
+      </div>
+      <div>
+        <h1 className="page-subtitle">Summary</h1>
+
+        <p className="text">
+          Bitcoin is a cryptocurrency, a virtual currency designed to act as
+          money and a form of payment outside the control of any one person,
+          group, or entity, and thus removing the need for third-party
+          involvement in financial transactions. It is rewarded to blockchain
+          miners for the work done to verify transactions and can be purchased
+          on several exchanges. Bitcoin was introduced to the public in 2009 by
+          an anonymous developer or group of developers using the name Satoshi
+          Nakamoto. It has since become the most well-known cryptocurrency in
+          the world.
+        </p>
+        <a
+          target="_blank"
+          className="app-link"
+          href="https://www.investopedia.com/terms/b/bitcoin.asp#:~:text=Launched%20in%202009%2C%20Bitcoin%20is,system%20known%20as%20a%20blockchain."
+        >
+          Source: Investopedia
+        </a>
+
+        <p className="text">
+          The above graph, is a plot of the <b>closing</b> prices of bitcoin,
+          between the time intervals of
+          <a
+            style={{ marginLeft: 6 }}
+            href="https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/day/2019-01-01/2022-05-01?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW"
+            className="app-link"
+            target="_blank"
+          >
+            22nd January 2019 - 22nd May 2022
+          </a>
+        </p>
+        <h1 className="page-subtitle">API Source</h1>
+        <a
+          className="app-link"
+          target="_blank"
+          href="https://polygon.io/docs/crypto/getting-started"
+        >
+          <img className="api-logos" src={polygonLogo} />
+        </a>
+
+        <h1 className="page-subtitle">Involed Files</h1>
+        <p className="text">
+          Files that have been put together to display this page
+        </p>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {involved.map((it, ind) => {
+            return (
+              <a
+                style={{ marginBottom: 10 }}
+                key={ind}
+                className="app-link"
+                href={it.url || "#"}
+                target="_blank"
+              >
+                {it.name}
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 }
 
