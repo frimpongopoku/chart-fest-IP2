@@ -67,7 +67,7 @@ function Candle({ appleStock }) {
           height={400}
         />
       </div>
-      <div>
+      <div className="window-sizing">
         <h2 className="page-subtitle"> Summary</h2>
         <p className="text">
           A stock, also known as equity, is a security that represents the

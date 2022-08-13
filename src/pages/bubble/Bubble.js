@@ -81,6 +81,7 @@ function Bubble({ countries }) {
           height={400}
         />
       </div>
+      <div className="window-sizing"></div>
     </div>
   );
 }

@@ -14,6 +14,9 @@
   --app-theme-background-hard: #2f1a27;
 }
 
+.api-logos {
+  object-fit: contain;
+}
 .li {
   display: flex;
   justify-content: center;
@@ -103,6 +106,15 @@
   transition: 0.2s ease-out;
 }
 
+.app-ul {
+}
+.code-extract {
+  background: var(--app-theme-background-hard);
+  color: var(--app-theme-orange);
+  font-weight: bold;
+
+  width: 100%;
+}
 .page-wrapper-container {
   display: flex;
   flex-direction: row;

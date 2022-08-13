@@ -2,6 +2,17 @@
   .phone-vanish {
     display: none;
   }
+  .window-sizing { 
+    padding:0px 10px;
+  }
+  .app-ul {
+    padding: 20px;
+  }
+  .app-ul li {
+    color: var(--app-theme-orange);
+    font-size: medium;
+    margin-bottom: 10px;
+  }
   .api-logos {
     height: 110px;
     width: 100px;
@@ -17,6 +28,11 @@
 
   .li a {
     font-size: 13px;
+  }
+  .code-extract {
+    padding: 15px;
+    margin: 20px 0px;
+    font-size: medium;
   }
   .box p {
     font-size: 15px;

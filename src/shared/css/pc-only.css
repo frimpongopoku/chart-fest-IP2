@@ -2,10 +2,26 @@
   .box p {
     font-size: 19px;
   }
-.api-logos { 
-  height:200px; 
-  width:200px;
-}
+  .window-sizing {
+    padding: 0px 20px;
+  }
+  .code-extract {
+    padding: 25px;
+    margin: 20px 0px;
+    font-size: large;
+  }
+  .app-ul {
+    padding: 20px;
+  }
+  .app-ul li {
+    color: var(--app-theme-orange);
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .api-logos {
+    height: 200px;
+    width: 200px;
+  }
   .ol {
     align-items: center;
     justify-content: center;
@@ -43,7 +59,7 @@
     font-size: medium;
   }
   .text {
-    font-size: 25px;
+    font-size: 21px;
     line-height: 1.7;
   }
   .page-title {
