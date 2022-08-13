@@ -15,7 +15,7 @@ const involved = [
     url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/PageWrapper.js",
   },
   {
-    name: "Trends.js",
+    name: "Candle.js",
     url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/trend/Trends.js",
   },
   {
@@ -102,7 +102,7 @@ function Trends({ bitcoins }) {
         />
       </div>
       <div>
-        <h1 className="page-subtitle">Summary</h1>
+        <h2 className="page-subtitle">Summary</h2>
 
         <p className="text">
           Bitcoin is a cryptocurrency, a virtual currency designed to act as
@@ -124,18 +124,19 @@ function Trends({ bitcoins }) {
         </a>
 
         <p className="text">
-          The above graph, is a plot of the <b>closing</b> prices of bitcoin,
-          between the time intervals of
+          The above graph is a plot demonstrating the trend of bitcoin{" "}
+          <b>closing</b> prices within the time frame of between the time
+          intervals of
           <a
             style={{ marginLeft: 6 }}
             href="https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/day/2019-01-01/2022-05-01?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW"
             className="app-link"
             target="_blank"
           >
-            22nd January 2019 - 22nd May 2022
+            1st January 2019 - 1st May 2022
           </a>
         </p>
-        <h1 className="page-subtitle">API Source</h1>
+        <h2 className="page-subtitle">API Source</h2>
         <a
           className="app-link"
           target="_blank"
@@ -144,7 +145,7 @@ function Trends({ bitcoins }) {
           <img className="api-logos" src={polygonLogo} />
         </a>
 
-        <h1 className="page-subtitle">Involed Files</h1>
+        <h2 className="page-subtitle">Involved Files</h2>
         <p className="text">
           Files that have been put together to display this page
         </p>

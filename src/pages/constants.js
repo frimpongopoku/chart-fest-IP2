@@ -46,6 +46,7 @@ export const items = [
   },
 ];
 
+
 export const STOCKS_URL =
   "https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/week/2019-01-22/2022-05-22?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW";
 
