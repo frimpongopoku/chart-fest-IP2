@@ -15,13 +15,6 @@ export const items = [
     url: "/pages/overview",
   },
   {
-    name: "Population",
-    icon: "fa fa-circle",
-    key: "population",
-    color: "var(--app-theme-cyan)",
-    url: "/pages/population",
-  },
-  {
     name: "Bitcoin",
     nickname: "Bitcoin Trend",
     icon: "fa fa-btc",
@@ -29,6 +22,14 @@ export const items = [
     color: "var(--app-theme-light)",
     url: "/pages/bitcoin",
   },
+  {
+    name: "Population",
+    icon: "fa fa-circle",
+    key: "population",
+    color: "var(--app-theme-cyan)",
+    url: "/pages/population",
+  },
+
   {
     name: "Stocks",
     nickname: "Apple Stock",

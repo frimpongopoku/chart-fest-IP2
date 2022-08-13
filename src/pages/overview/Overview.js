@@ -1,5 +1,5 @@
 import React from "react";
-import motorGuys from "./../../media/motor.png";
+import heroku_logo from "./../../media/heroku_logo.png";
 import reactLogo from "./../../media/react_logo.png";
 import reduxLogo from "./../../media/redux_logo.png";
 import apexLogo from "./../../media/apex_charts_logo.png";
@@ -8,17 +8,19 @@ import reactRouterLogo from "./../../media/react_router_logo.png";
 import dribbleLogo from "./../../media/dribble_logo.png";
 import confettie from "./../../media/confetti_logo.png";
 import country_logo from "./../../media/country_logo.png";
+import gh_logo from "./../../media/gh_logo.png";
+import figma_logo from "./../../media/figma_logo.png";
 
 function Overview() {
   const sources = [
     {
       name: "Design Inspiration (Dribble)",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+      url: "https://dribbble.com/shots/15501287-Finance-Dashboard-Design",
       image: dribbleLogo,
     },
     {
       name: "Polygon API",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+      url: "https://polygon.io/products",
       image: polygonLogo,
     },
     {
@@ -28,12 +30,12 @@ function Overview() {
     },
     {
       name: "African Countries API",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+      url: "https://restcountries.com",
       image: country_logo,
     },
     {
       name: "Confetti Animation API ",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+      url: "https://www.npmjs.com/package/react-confetti",
       image: confettie,
     },
     {
@@ -43,13 +45,28 @@ function Overview() {
     },
     {
       name: "React Router",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
+      url: "https://reactrouter.com/docs/en/v6",
+      image: reactRouterLogo,
+    },
+    {
+      name: "React",
+      url: "https://reactjs.org/docs/getting-started.html",
       image: reactLogo,
     },
     {
-      name: "React Router",
-      url: "https://apexcharts.com/react-chart-demos/candlestick-charts/",
-      image: reactRouterLogo,
+      name: "Heroku",
+      url: "https://www.heroku.com/",
+      image: heroku_logo,
+    },
+    {
+      name: "Github",
+      url: "https://github.com/frimpongopoku/chart-fest-IP2",
+      image: gh_logo,
+    },
+    {
+      name: "Figma",
+      url: "https://www.figma.com/file/biHSBTYYtTw4JUJ8zlAmOW/IP2-Mockup?node-id=5%3A530",
+      image: figma_logo,
     },
   ];
   return (
@@ -94,7 +111,23 @@ function Overview() {
               );
             })}
           </ol>
-          <h4 className="page-subtitle">Assignment Description Source</h4>
+          <h3 className="page-subtitle">Source Files</h3>
+          <a
+            className="app-link touchable-opacity"
+            href="https://github.com/frimpongopoku/chart-fest-IP2"
+            target="_blank"
+          >
+            Github Repository
+          </a>
+          <br />
+          <a
+            className="app-link touchable-opacity"
+            href="https://www.figma.com/file/biHSBTYYtTw4JUJ8zlAmOW/IP2-Mockup?node-id=5%3A530"
+            target="_blank"
+          >
+            Mockups on Figma
+          </a>
+          <h3 className="page-subtitle">Assignment Description Source</h3>
           <a
             className="app-link touchable-opacity"
             href="https://docs.google.com/document/d/1lwJ4viuYr3MlDZvsUTdj6G_k-TtPi7M0Tjiyu4kZR3s/edit"
