@@ -35,6 +35,18 @@ function App() {
             </div>
           );
         })}
+        <div
+          onClick={() => navigateTo("pages/technology")}
+          className="box touchable-opacity"
+          style={{
+            "--back-color": "#45a589",
+            width: "100%",
+            height: "12vh",
+            flexBasis: "82%",
+          }}
+        >
+          <p>Web Technology</p>
+        </div>
       </div>
     </div>
   );

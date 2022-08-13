@@ -7,6 +7,7 @@ import Bubble from "./bubble/Bubble";
 import Candle from "./candle/Candle";
 import { items } from "./constants";
 import Overview from "./overview/Overview";
+import AboutOurWebTechnology from "./special/AboutOurWebTechnology";
 import Trends from "./trend/Trends";
 
 function PageWrapper() {
@@ -19,6 +20,7 @@ function PageWrapper() {
     stocks: <Candle />,
     bitcoin: <Trends />,
     authors: <Authors />,
+    technology: <AboutOurWebTechnology />,
   };
   const pageComponent = pages[pagename];
   const pageObj = items.find((it) => it.key === pagename);
