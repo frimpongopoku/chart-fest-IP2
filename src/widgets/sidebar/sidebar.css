@@ -64,6 +64,7 @@ small {
     bottom: 0;
     width: 100%;
     flex-direction: row;
+    overflow-x: scroll;
   }
   .sidebar-small-box {
     padding: 10px;
