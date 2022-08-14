@@ -6,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 import { items } from "./pages/constants";
 import { fetchInitialContent } from "./redux/actions/actions";
 
+// This is the list of available options on our landing page. 
+// We loop over the array and transform the object with our defined templates to show 
+// as the sqaure boxes you see
 const boxes = [
   { name: "Overview", color: "var(--app-theme-orange)", key: "overview" },
   {

@@ -116,6 +116,7 @@ function Trends({ bitcoins }) {
           the world.
         </p>
         <a
+          rel="noreferrer"
           target="_blank"
           className="app-link"
           href="https://www.investopedia.com/terms/b/bitcoin.asp#:~:text=Launched%20in%202009%2C%20Bitcoin%20is,system%20known%20as%20a%20blockchain."
@@ -128,6 +129,7 @@ function Trends({ bitcoins }) {
           <b>closing</b> prices within the time frame of between the time
           intervals of
           <a
+            rel="noreferrer"
             style={{ marginLeft: 6 }}
             href="https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/day/2019-01-01/2022-05-01?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW"
             className="app-link"
@@ -138,11 +140,12 @@ function Trends({ bitcoins }) {
         </p>
         <h2 className="page-subtitle">API Source</h2>
         <a
+          rel="noreferrer"
           className="app-link"
           target="_blank"
           href="https://polygon.io/docs/crypto/getting-started"
         >
-          <img className="api-logos" src={polygonLogo} />
+          <img className="api-logos" src={polygonLogo} alt="media" />
         </a>
 
         <h2 className="page-subtitle">Involved Files</h2>
@@ -153,6 +156,7 @@ function Trends({ bitcoins }) {
           {involved.map((it, ind) => {
             return (
               <a
+                rel="noreferrer"
                 style={{ marginBottom: 10 }}
                 key={ind}
                 className="app-link"

@@ -90,6 +90,7 @@ function Candle({ appleStock }) {
           1
         </p>
         <a
+          rel="noreferrer"
           target="_blank"
           className="app-link"
           href="https://www.investopedia.com/apple-stock-aapl-5075819"
@@ -99,6 +100,7 @@ function Candle({ appleStock }) {
         <p className="text">
           The graph provides a summary of the AAPL stock within a time frame of
           <a
+            rel="noreferrer"
             style={{ marginLeft: 6 }}
             href="https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/week/2019-01-22/2022-05-22?adjusted=true&sort=asc&limit=120&apiKey=eeWatLq7rmAWs5yCeFkohzDzIzzHYdpW"
             className="app-link"
@@ -109,11 +111,12 @@ function Candle({ appleStock }) {
         </p>
         <h2 className="page-subtitle">API Source</h2>
         <a
+          rel="noreferrer"
           className="app-link"
           target="_blank"
           href="https://polygon.io/getting-started"
         >
-          <img className="api-logos" src={polygonLogo} />
+          <img className="api-logos" src={polygonLogo} alt="media" />
         </a>
 
         <h2 className="page-subtitle">Involved Files</h2>
@@ -124,6 +127,7 @@ function Candle({ appleStock }) {
           {involved.map((it, ind) => {
             return (
               <a
+                rel="noreferrer"
                 style={{ marginBottom: 10 }}
                 key={ind}
                 className="app-link"

@@ -266,3 +266,24 @@ series: [
   ],
 
   --- AAPL stock data API data structure
+
+   series: [
+    {
+      name: "Bubble1",
+      data: [[new Date().getTime(), 43, 28]],
+    },
+    {
+      name: "Bubble2",
+      data: [[new Date().getTime(), 12, 64]],
+    },
+    {
+      name: "Bubble3",
+      data: [[new Date().getTime(), 49, 78]],
+    },
+    {
+      name: "Bubble4",
+      data: [[new Date().getTime(), 13, 18]],
+    },
+  ],
+
+  ----- Rest Countries API data structure

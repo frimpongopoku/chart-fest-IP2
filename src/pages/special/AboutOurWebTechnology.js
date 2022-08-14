@@ -102,7 +102,7 @@ return (
         templates that were repeatedly reused for content that have the same
         structure. You can see this in action with the sidebar items in may
         areas of our application. Here are a few examples in the following
-        files: Sidebar.js , Overview.js, and Landing page. <br />
+        files: Sidebar.js , Overview.js, and App.js. <br />
         <br />
         Finally, the use of React allowed the application to be compressed into
         a neat downloadable bundle that allows for easy loading on the client

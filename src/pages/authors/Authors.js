@@ -46,7 +46,7 @@ function Authors() {
                 : "transparent",
             }}
           >
-            <img src={it.img} />
+            <img src={it.img} alt="media" />
             <h6>{it.name}</h6>
             <p>{it.description}</p>
           </div>

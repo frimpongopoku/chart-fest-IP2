@@ -12,6 +12,7 @@ import gh_logo from "./../../media/gh_logo.png";
 import figma_logo from "./../../media/figma_logo.png";
 
 function Overview() {
+  // Grouped up the sources together, a consistent styling is maintained,
   const sources = [
     {
       name: "Design Inspiration (Dribble)",
@@ -96,10 +97,12 @@ function Overview() {
           <h4 className="page-subtitle">Resources</h4>
           <ol className="ol">
             {sources.map((it, index) => {
+              // Now, only this piece of HTML is used for all the sources listed
               return (
                 <li key={index.toString()} style={{}} className="li">
-                  <img src={it.image} />
+                  <img src={it.image} alt="media" />
                   <a
+                    rel="noreferrer"
                     href={it.url}
                     target="_blank"
                     className="app-link touchable-opacity"
@@ -113,6 +116,7 @@ function Overview() {
           </ol>
           <h3 className="page-subtitle">Source Files</h3>
           <a
+            rel="noreferrer"
             className="app-link touchable-opacity"
             href="https://github.com/frimpongopoku/chart-fest-IP2"
             target="_blank"
@@ -121,6 +125,7 @@ function Overview() {
           </a>
           <br />
           <a
+            rel="noreferrer"
             className="app-link touchable-opacity"
             href="https://www.figma.com/file/biHSBTYYtTw4JUJ8zlAmOW/IP2-Mockup?node-id=5%3A530"
             target="_blank"
@@ -129,6 +134,7 @@ function Overview() {
           </a>
           <h3 className="page-subtitle">Assignment Description Source</h3>
           <a
+            rel="noreferrer"
             className="app-link touchable-opacity"
             href="https://docs.google.com/document/d/1lwJ4viuYr3MlDZvsUTdj6G_k-TtPi7M0Tjiyu4kZR3s/edit"
             target="_blank"

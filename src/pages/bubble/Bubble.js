@@ -3,26 +3,26 @@ import ReactApexChart from "react-apexcharts";
 import { connect } from "react-redux";
 import { INITIAL_STATE } from "../../redux/reducers/reducers";
 import Loader from "../../widgets/loader/Loader";
-
+import countries_logo from "./../../media/country_logo.png";
+const involved = [
+  {
+    name: "Actions.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/redux/actions/actions.js",
+  },
+  {
+    name: "PageWrapper.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/PageWrapper.js",
+  },
+  {
+    name: "Bubble.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/pages/candle/Candle.js",
+  },
+  {
+    name: "Loader.js",
+    url: "https://github.com/frimpongopoku/chart-fest-IP2/blob/master/src/widgets/loader/Loader.js",
+  },
+];
 const values = {
-  series: [
-    {
-      name: "Bubble1",
-      data: [[new Date().getTime(), 43, 28]],
-    },
-    {
-      name: "Bubble2",
-      data: [[new Date().getTime(), 12, 64]],
-    },
-    {
-      name: "Bubble3",
-      data: [[new Date().getTime(), 49, 78]],
-    },
-    {
-      name: "Bubble4",
-      data: [[new Date().getTime(), 13, 18]],
-    },
-  ],
   options: {
     chart: {
       height: "100px",
@@ -81,7 +81,59 @@ function Bubble({ countries }) {
           height={400}
         />
       </div>
-      <div className="window-sizing"></div>
+      <div className="window-sizing">
+        <h2 className="page-subtitle"> Summary</h2>
+        <p className="text">
+          The above chart, is a comparison of African countries in terms of
+          their <b>population, area in square meters, and gini</b>
+          <br />
+          <i>
+            {" "}
+            <b>Gini </b> is a statistical measure of economic inequality in a
+            country{" "}
+          </i>
+        </p>
+
+        <a
+          rel="noreferrer"
+          target="_blank"
+          className="app-link"
+          href="https://www.investopedia.com/terms/g/gini-index.asp"
+        >
+          Source: Investopedia
+        </a>
+
+        <h2 className="page-subtitle">API Source</h2>
+        <a
+          rel="noreferrer"
+          className="app-link"
+          target="_blank"
+          href="https://restcountries.com"
+        >
+          <img className="api-logos" src={countries_logo} alt="media" />
+        </a>
+
+        <h2 className="page-subtitle">Involved Files</h2>
+        <p className="text">
+          Files that have been put together to display this page
+        </p>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          {involved.map((it, ind) => {
+            return (
+              <a
+                rel="noreferrer"
+                style={{ marginBottom: 10 }}
+                key={ind}
+                className="app-link"
+                href={it.url || "#"}
+                target="_blank"
+              >
+                {it.name}
+              </a>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

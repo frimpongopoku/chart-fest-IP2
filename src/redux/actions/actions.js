@@ -11,6 +11,12 @@ export const testReduxAction = (someValue) => {
   return { type: DO_NOTHING, payload: someValue };
 };
 
+/**
+ * This is the function that actually fetches the content from all our API 
+ * It fetches content from all the 3 APIs we are using at once, and the 
+ * response is passed into other functions to be modified
+ * @returns 
+ */
 export const fetchInitialContent = () => (dispatch) => {
   return Promise.all([
     InternetExplorer.get({ url: STOCKS_URL }),

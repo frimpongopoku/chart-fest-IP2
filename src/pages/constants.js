@@ -22,13 +22,6 @@ export const items = [
     color: "var(--app-theme-light)",
     url: "/pages/bitcoin",
   },
-  {
-    name: "Population",
-    icon: "fa fa-circle",
-    key: "population",
-    color: "var(--app-theme-cyan)",
-    url: "/pages/population",
-  },
 
   {
     name: "Stocks",
@@ -39,6 +32,13 @@ export const items = [
     url: "/pages/stocks",
   },
   {
+    name: "Population",
+    icon: "fa fa-circle",
+    key: "population",
+    color: "var(--app-theme-cyan)",
+    url: "/pages/population",
+  },
+  {
     name: "Authors",
     icon: "fa fa-users",
     key: "authors",
@@ -46,13 +46,13 @@ export const items = [
     url: "/pages/authors",
   },
   {
-    name: "Our Web Technology",
+    name: "Extra",
     nickname: "Our Web Technology",
     icon: "fa fa-users",
     key: "technology",
     color: "var(--app-theme-orange)",
     url: "/pages/technology",
-    hidden: true,
+    hidden: false,
   },
 ];
 
