@@ -43,20 +43,19 @@ function AboutOurWebTechnology() {
         <li>A future proof system</li>
       </ul>
       <p className="text">
-        The expectations listed above would have incredibly slowed down the
-        development pace, and resulted in a convoluted system if implemented
-        with simple HTML , CSS, and Javascript files. As such, React was chosen;
-        a verdict that was backed by vast research. Our research declared React
-        JS, the most suitable system to aid the team in nearing it's
-        expectations.
+        The expectations listed above would have slowed down the development
+        pace, and resulted in a convoluted system if implemented with simple
+        HTML, CSS, and Javascript files. As such, React was chosen; a verdict
+        that was backed by vast research. Our research declared React JS, the
+        most suitable system to aid the team in nearing it's expectations.
         <br />
         Unlike the normal architecture of a 3-piece system in the previous
         generation of web development, where elements of the application
         interface needs to be tracked and manually updated in order to implement
         interactivity in javascript. The React library completely takes charge
         of the DOM and makes it easy to manipulate all parts of the application
-        in the easiest way possible. A react application is a combination of
-        different components. Where each component has a defined state. With any
+        in the easiest way possible. A React application is a combination of
+        different components. Where each component has a defined state; and with any
         change in the properties of a component, the React Library forces the
         affected part of the application to re-render, in order to display the
         latest changes of the application.
@@ -69,7 +68,7 @@ function AboutOurWebTechnology() {
         manipulated the style of the particular button into the desired state.
         With a single button, the process is manageable. However, with multiple
         buttons and a few other button states to deal with, tracking each
-        element on a page becomes tedious and convoluted. Fortunately with a
+        element on a page would become tedious. Fortunately with a
         system such as React, the team is able to update the properties of all
         elements by simply updating values in the state, which in turn cause a
         chain reaction of updates to easily implement all changes at once.

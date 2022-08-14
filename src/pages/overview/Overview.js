@@ -72,6 +72,7 @@ function Overview() {
   ];
   return (
     <div className="content-wrapper">
+      <h4 className="page-subtitle">Preamble</h4>
       <p className="text">
         Groups will create a web application that demonstrates how to visualise
         data through appropriate coding practices. The project will involve
@@ -94,7 +95,7 @@ function Overview() {
       </p>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div>
-          <h4 className="page-subtitle">Resources</h4>
+          <h4 className="page-subtitle">Resources We Used</h4>
           <ol className="ol">
             {sources.map((it, index) => {
               // Now, only this piece of HTML is used for all the sources listed

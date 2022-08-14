@@ -48,7 +48,7 @@ export const items = [
   {
     name: "Extra",
     nickname: "Our Web Technology",
-    icon: "fa fa-users",
+    icon: "fa fa-birthday-cake",
     key: "technology",
     color: "var(--app-theme-orange)",
     url: "/pages/technology",
