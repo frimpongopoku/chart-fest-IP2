@@ -2,6 +2,12 @@
   .phone-vanish {
     display: none;
   }
+  .author-item p { 
+    font-size:14px;
+  }
+  .author-item h6 { 
+    font-size: 18px;
+  }
   .window-sizing { 
     padding:0px 10px;
   }
@@ -81,7 +87,7 @@
     flex-direction: column;
   }
   .author-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .app-content {
     width: 100vw;
